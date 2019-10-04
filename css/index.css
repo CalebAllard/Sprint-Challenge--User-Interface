@@ -229,7 +229,7 @@ header nav a{
     text-decoration:none;
     color:black;
     border:2px solid black;
-    border-radius:10%;
+    border-radius:10px;
     width:120px;
     padding:8px 15px;
     text-align:center;
