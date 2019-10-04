@@ -67,7 +67,7 @@ p {
 }
 
 .container {
-    width: 800px;
+    max-width: 800px;
     margin: 0 auto;
 }
 
@@ -81,6 +81,11 @@ p {
 
 .top-content .text-container {
     width: 48%;
+    padding: 0 1%;
+    padding-bottom: 20px;  
+}
+.top-content .text-container-about {
+    width: 100%;
     padding: 0 1%;
     padding-bottom: 20px;  
 }
@@ -143,4 +148,126 @@ footer nav {
 footer nav a {
     color: white;
     text-decoration: none;
+}
+
+header{
+    display:flex;
+    justify-content:space-around;
+    padding:25px 0;
+    /* position:relative; */
+}
+header nav{
+    display:flex;
+    justify-content:space-around;
+    width:100%;
+    margin-top:25px;
+    
+}
+header nav a{
+    text-decoration:none;
+    color:grey;
+    
+}
+.banner{
+    margin:15px 0;
+    width:100%;
+}
+
+.boxes .box:nth-child(1) {
+    background-color:teal;
+}
+.boxes .box:nth-child(2) {
+    background-color:gold;
+}
+.boxes .box:nth-child(3) {
+    background-color:cadetblue;
+}
+.boxes .box:nth-child(4) {
+    background-color:coral;
+}
+.boxes .box:nth-child(5) {
+    background-color:crimson;
+}
+.boxes .box:nth-child(6) {
+    background-color:forestgreen;
+}
+.boxes .box:nth-child(7) {
+    background-color:darkorchid;
+}
+.boxes .box:nth-child(8) {
+    background-color:hotpink;
+}
+.boxes .box:nth-child(9) {
+    background-color:indigo;
+}
+.boxes .box:nth-child(10) {
+    background-color:dodgerblue;
+}
+
+/* About section  */
+
+.two-col{
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+    /* width:100%; */
+
+}
+.card{
+    padding-bottom:45px;
+}
+.card .card-text{
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+    padding:15px 0;
+    border-bottom:2px dotted black;
+    width:90%;
+}
+
+.card-text .button{
+    text-decoration:none;
+    color:black;
+    border:2px solid black;
+    border-radius:10%;
+    width:120px;
+    padding:8px 15px;
+    text-align:center;
+    margin-top: 15px;
+}
+
+.about-work-together{
+    
+    padding: 0 25px;
+    padding-bottom:45px;
+
+
+}
+
+/* responsive media input bellow */
+
+@media only screen and (max-width:799px){
+    .two-col{
+        flex-wrap:wrap;
+        justify-content:space-around;
+        align-items:center;
+        
+    }
+    .two-col .card{
+        max-width:433px;
+        
+    } 
+    .boxes{
+        justify-content:space-between;
+        align-content:space-around;
+    }
+    .box{
+        min-width:100px;
+    }
+    
+    
+    
+
+    
+    
 }
