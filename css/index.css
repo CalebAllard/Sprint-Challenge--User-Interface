@@ -67,7 +67,7 @@ p {
 }
 
 .container {
-    width: 800px;
+    max-width: 800px;
     margin: 0 auto;
 }
 
@@ -242,4 +242,32 @@ header nav a{
     padding-bottom:45px;
 
 
+}
+
+/* responsive media input bellow */
+
+@media only screen and (max-width:799px){
+    .two-col{
+        flex-wrap:wrap;
+        justify-content:space-around;
+        align-items:center;
+        
+    }
+    .two-col .card{
+        max-width:433px;
+        
+    } 
+    .boxes{
+        justify-content:space-between;
+        align-content:space-around;
+    }
+    .box{
+        min-width:100px;
+    }
+    
+    
+    
+
+    
+    
 }
